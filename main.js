@@ -17,7 +17,7 @@ function addTodo() {
   const text = input.value.trim();
   if (text == "") return;
 
-  const todo = new Todo(Date.now(), text, new Date());
+  const todo = new Todo(Date.now(), text, false, new Date());
   todos.push(todo);
   input.value = "";
   saveTodos();
