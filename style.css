@@ -1,0 +1,119 @@
+.todo-container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.title {
+  display: flex;
+  justify-content: center;
+}
+
+.todo-input {
+  width: 1000px;
+  padding: 10px;
+  margin-right: 10px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+}
+.todo-button {
+  padding: 9px 15px;
+  background-color: DodgerBlue;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.todo-button:hover {
+  background-color: #218838;
+}
+.todo-list {
+  list-style: none;
+  padding: 0;
+}
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+}
+.todo-item.completed span {
+  text-decoration: line-through;
+  color: #888;
+}
+.todo-item button {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.todo-item button:hover {
+  background-color: #c82333;
+}
+.filter-buttons {
+  margin: 10px 0;
+  text-align: center;
+}
+.filter-buttons button {
+  margin: 0 5px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.filter-buttons .active {
+  background-color: DodgerBlue;
+  color: white;
+}
+/* Bảng To-Do */
+.todo-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+}
+
+.todo-table th,
+.todo-table td {
+  padding: 12px 15px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+.todo-table th {
+  background-color: LightGray;
+  color: black;
+  text-transform: uppercase;
+}
+
+.todo-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.todo-table tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* Công việc đã hoàn thành */
+.todo-table tr.completed td:first-child {
+  text-decoration: line-through;
+  color: #888;
+}
+
+/* Nút Xóa */
+.todo-table button {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.todo-table button:hover {
+  background-color: #c82333;
+}
